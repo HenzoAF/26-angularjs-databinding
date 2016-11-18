@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>exe2</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-beta.0/angular.min.js"></script>
+</head>
+<body>
+	<div ng-app ng-init="dolar=0">
+		<p>Dólar: <input type="number" min="0" ng-model="dolar"></p>
+		<p>Reais: {{dolar * 4.10 | currency:"R$"}}</p>
+		<p>Euros: {{dolar * 0.90 | currency:"€"}}</p>
+	</div>
+</body>
+</html>
